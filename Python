@@ -1,0 +1,110 @@
+age = int(input("Enter your age: "))
+while age < 0:
+    print("Age invalid")
+    age = int(input("Please enter your age: "))
+print(f"You are {age} years old")
+food = input("Enter food you like: (press q to quit)")
+while not food == "q":
+    print(f"You like {food}")
+    food = input("Enter food you like: (press q to quit)")
+print("Thank you")
+num = int(input("Enter a number between 1 and 10: "))
+while num<0 or num>10:
+    print("please enter a valid number")
+    num = int(input("Enter a number between 1 and 10: "))
+print(f"You entered {num}")
+principle = 0
+time = 0
+interest = 0
+
+while principle <= 0:
+    principle = float(input("Enter principle ammount: "))
+    if principle <= 0:
+        print("Principle cannot be 0 or negative")
+
+while interest <= 0:
+    interest = float(input("Enter rate of interest: "))
+    if interest <= 0:
+        print("interest cannot be 0 or negative")
+
+while time <= 0:
+    time = int(input("Enter time in years: "))
+    if time <= 0:
+        print("Time cannot be less than zero")
+
+Ammount = principle * pow((1 + interest / 100), time)
+print(f"The total ammount after {time} years is: {Ammount:.2f}")
+
+CI = Ammount - principle
+print(f"Compound interest is : {CI:.2f}")
+credit_card = "0876-8976-1452-6995"
+for x in credit_card:
+    print(x)
+    for x in range(1,21):
+    if x==13:
+        break
+    else:
+        print(x)
+for x in range(3):
+    for y in range(1,10):
+        print(y, end ="-")
+    print()import time
+my_time = int(input("Enter the time in seconds: "))
+for x in range(my_time,0,-1):
+    seconds = x % 60
+    minutes = int (x/60) % 60
+    hours = int (x/3600)
+    print(f"{hours:02}:{minutes:02}:{seconds:02}")
+    time.sleep(1)
+
+print("TIME'S UP")
+
+
+unit1 = 134.52638
+unit2 = -456.8923
+unit3 = 98.2670
+print(f"Unit 1 is: {unit1:.2f}")
+print(f"Unit 2 is: {unit2:.2f}")
+print(f"Unit 2 is: {unit3:.2f}")for x in range(1,21):
+    if x==13:
+        break
+    else:
+        print(x)
+credit_number = input("Enter your credit card number her(8 digits): ")
+last_dig = (credit_number[-4:0])
+print(f"XXXX XXXX XXXX {last_dig}")for x in range(3):
+    for y in range(1,10):
+        print(y, end ="-")
+    print()username = input("Enter your name: ")
+if len(username) > 12:
+    print("Username can nto be more than 12 characters long")
+else:
+    print(f"Welcome {username}")
+temp = int(input("Enter temperature: "))
+if temp > 0 and temp < 25:
+    print("temperature is good")
+else:
+    print("temperature is bad")temp = int(input("Enter the temperature: "))
+if temp >=30 or temp <= 0:
+    print("The temperature is bad!")
+else:
+    print("The temperature is good!")
+temp = 20
+sunny = True
+if not sunny:
+    print("It is cloudy outside")
+else:
+    print("It's sunny outside")x = 10
+print("Positive" if x>=0 else "Negative")
+result = "even" if x%2==0 else "odd"
+print(result)
+a = int(input("Enter a number: "))
+b = int(input("Enter the 2nd number: "))
+print(a if a>b else b)
+phone_number = input("Enter your phone number: ")
+result = phone_number.replace("-","+")
+print(result)username = input("Enter your name: ")
+if len(username) > 12:
+    print("Username can nto be more than 12 characters long")
+else:
+    print(f"Welcome {username}")
